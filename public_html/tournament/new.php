@@ -1,6 +1,8 @@
 <?php
+if (isset($_POST['submit'])) {
     include  'create.php';
     createTournament($_POST);
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +49,7 @@
             <input type="text" name="venue" id="venue" class="form-control">
             <label for="organizer" class="form-label mt-3">Organizer</label>
             <input type="text" name="organizer" id="organizer" class="form-control">
-            <button class="btn btn-primary mt-3 mb-5">Submit</button>
+            <button class="btn btn-primary mt-3 mb-5" name="submit">Submit</button>
         </form>
     </main>
     <footer>

@@ -11,5 +11,7 @@ function fetchTournaments(): array | null
 
     $data = $result->fetch_all(MYSQLI_ASSOC);
 
+    $con->close();
+
     return $data;
 }

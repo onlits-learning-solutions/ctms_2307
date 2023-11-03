@@ -47,6 +47,7 @@ $tournaments = fetchTournaments();
                     <th>Name</th>
                     <th>Venue</th>
                     <th>Organiser</th>
+                    <th colspan="2"></th>
                 </tr>
             </thead>
             <tbody>
@@ -58,6 +59,8 @@ $tournaments = fetchTournaments();
                         <td><?= $tournament['name'] ?></td>
                         <td><?= $tournament['venue'] ?></td>
                         <td><?= $tournament['organiser'] ?></td>
+                        <td><a href="" class="btn btn-primary">Edit</a></td>
+                        <td><a href="" class="btn btn-primary">Delete</a></td>
                     </tr>
                 <?php
                 }
